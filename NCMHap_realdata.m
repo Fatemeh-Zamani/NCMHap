@@ -56,7 +56,7 @@ data=mapfag(M);
 delta=25;
 % Main loop
 for j = 1:max_iter,
-    [T,I,F, center, obj_fcn(j)] = stepNCM(data, T,I,F,cluster_n,delta,expo);
+    [T,I,F, center, obj_fcn(j)] = stepNCMhap(data, T,I,F,cluster_n,delta,expo);
     if display,
         fprintf('Iteration count = %d, obj. fcn = %f\n', j, obj_fcn(j));
     end
