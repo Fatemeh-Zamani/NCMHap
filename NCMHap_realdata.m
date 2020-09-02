@@ -53,7 +53,7 @@ data=mapfag(M);
 
 
 [T,I,F] = initNCM(H_rec,M,cluster_n);% Initial fuzzy partition
-delta=10;
+delta=25;
 % Main loop
 for j = 1:max_iter,
     [T,I,F, center, obj_fcn(j)] = stepNCM(data, T,I,F,cluster_n,delta,expo);
